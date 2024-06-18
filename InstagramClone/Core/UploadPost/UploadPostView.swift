@@ -1,18 +1,18 @@
 //
-//  CompleteSignUpView.swift
+//  UploadPostView.swift
 //  InstagramClone
 //
-//  Created by Michael Yang on 6/10/24.
+//  Created by Michael Yang on 6/12/24.
 //
 
 import SwiftUI
 
-struct CompleteSignUpView: View {
+struct UploadPostView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    CompleteSignUpView()
+    UploadPostView()
 }

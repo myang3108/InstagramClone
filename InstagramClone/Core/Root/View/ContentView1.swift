@@ -1,18 +1,18 @@
 //
-//  CreateUsernameView.swift
+//  ContentView1.swift
 //  InstagramClone
 //
-//  Created by Michael Yang on 6/6/24.
+//  Created by Michael Yang on 6/17/24.
 //
 
 import SwiftUI
 
-struct CreateUsernameView: View {
+struct ContentView1: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    CreateUsernameView()
+    ContentView1()
 }
