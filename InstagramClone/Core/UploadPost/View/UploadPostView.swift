@@ -11,7 +11,7 @@ import PhotosUI
 struct UploadPostView: View {
     @State private var caption = ""
     @State private var imagePickerPresented = false
-    @StateObject private var viewModel = UploadPostViewModel()
+    @StateObject var viewModel = UploadPostViewModel()
     @Binding var tabIndex: Int
     
     
@@ -34,8 +34,15 @@ struct UploadPostView: View {
                     .fontWeight(.semibold)
                 
                 Spacer()
+                
                 Button {
-                    print("Upload")
+                    Task {
+                        try await viewModel.uploadPost(caption: caption)
+                        caption = ""
+                        viewModel.selectedImage = nil
+                        viewModel.postImage = nil
+                        tabIndex = 0
+                    }
                 } label: {
                     Text("Upload")
                         .fontWeight(.semibold)
